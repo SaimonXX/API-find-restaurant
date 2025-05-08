@@ -1,0 +1,17 @@
+services:
+  api:
+    image: restaurant-finder-api:1.0.0
+    build:
+      context: .
+    container_name: restaurant-finder-api
+    ports:
+      - 3000:3000
+    volumes:
+      - restaurant-finder-db:/app/db
+    env_file:
+      - .env
+    environment:
+      - DATABASE_PATH=/app/db/api.db.sqlite
+    command: npm run start
+volumes:
+  restaurant-finder-db:
