@@ -2,9 +2,12 @@
 
 Este documento describe los endpoints principales de la API para autenticación y acceso a datos.
 
+Dentro del package.json estan todos los comandos disponibles para probar la API.
+Invluyendo dev, build, start, test
+
 ---
 
-### El archivo .env debe incluir...
+### El archivo .env debe crearse en la raiz del proyecto y debe incluir...
 
 * **.env:**
     ```json

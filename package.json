@@ -15,9 +15,6 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "dev1": "ts-node-dev --respawn --loader ts-node/esm --transpile-only src/server.ts",
-    "dev2": "nodemon --ext ts,json -r tsconfig-paths/register --exec ts-node src/server.ts",
-    "dev-docker": "nodemon --legacy-watch --ext ts,json --exec ts-node src/server.ts",
     "start": "node dist/server.js",
     "build": "tsc && tsc-alias",
     "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest"
